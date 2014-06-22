@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php echo doctype("html5");
+		// echo doctype("xhtml1-strict"); 
+ ?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">

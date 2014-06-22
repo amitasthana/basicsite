@@ -5,10 +5,33 @@ class Site extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('view_home');
+		$this->home();
 
 
 	}
+
+	public function home(){
+		$this->load->view('site_header');
+		$this->load->view('site_nav');
+		$this->load->view('content_home');
+		$this->load->view('site_footer');
+
+	}
+
+	public function about(){
+
+		$this->load->view('site_header');
+		$this->load->view('site_nav');
+		$this->load->view('content_about');
+		$this->load->view('site_footer');
+
+
+	}
+	
+	public function contact(){
+
+	}
+
 
 }
 
